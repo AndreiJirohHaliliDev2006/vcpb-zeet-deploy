@@ -1,0 +1,7 @@
+version: "1"
+rules:
+  - base: master
+    upstream: rojserbest:master
+    # Don't let the Pull app hard reset anything after merging
+    # Remember: hard reset == data loss if not backed up
+    mergeMethod: merge
